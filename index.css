@@ -1,0 +1,71 @@
+#map {
+    position: absolute;
+    bottom: 140px;
+    z-index: -1;
+}
+
+#character {
+    height: 50px;
+    margin-left: 60px;
+}
+
+#controls {
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    margin-left: 50px;
+}
+
+#coin {
+    height: 25px;
+    position: relative;
+    left: 480px;
+}
+
+#game-end {
+    border: 3px solid black;
+    background-color: grey;
+    width: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    left: 200px;
+    bottom: 100px;
+    visibility: hidden;
+}
+
+#game-end button {
+    border-radius: 2px;
+    border: 0px;
+    cursor: pointer;
+}
+
+#not-enough-coins {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 200px;
+    bottom: 400px;
+    visibility: hidden;
+}
+
+#tutorial {
+    text-align: right;
+    width: fit-content;
+    float: right;
+    position: relative;
+    bottom: 250px;
+    margin-right: 75px;
+}
+
+#tutorial h1{
+    text-align: center;
+}
+
+#tutorial p {
+    text-align: left;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platformer Game</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!--Controls-->
+    <div id="controls">
+        <button onclick="move('left')">Left</button>
+        <button onclick="move('right')">Right</button>
+        <button onclick="move('up')">Up</button>
+        <button onclick="move('down')">Down</button>
+    </div>
+    <!--Character-->
+    <div id="map">
+        <img src="./map.png" alt="Map">
+    </div>
+    <img id="character" src="./animations/Idle.png" alt="Character" style="position: relative;">
+    <h2>Coins: <span id="coinStats">0</span></h2>
+    <h2>Time: <span id="time">0</span></h2> <!--Create a seperate script by using setInvertal(addTime, 1 second)-->
+    <script src="./script.js"></script>
+    <script src="./addtime.js"></script>
+    <div class="coin-container">
+        <img id="coin" src="./coin.png" alt="Coin">
+    </div>
+    <div id="game-end"g>
+        <h1>Game End</h1>
+        <p>Time <span id="players-time"></span> Seconds</p>
+        <button onclick="restart()">Restart</button>
+    </div>
+    <div id="not-enough-coins">
+        <h1>Collect the coin first!</h1>
+    </div>
+    <div id="tutorial">
+        <h1>Tutorial</h1>
+        <p></p>Controls: Use the controls on the right side of the page to move the character</p>
+        <p>Your goal is to find the coin and enter the neighbourhood at the bottom.</p>
+        <p>Try to get the best time</p>
+    </div>
+</body>
+</html>
